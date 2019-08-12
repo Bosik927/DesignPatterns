@@ -1,11 +1,12 @@
 package com.github.bosik927;
 
+import com.github.bosik927.builder.sample.*;
 import com.github.bosik927.singleton.BasicSingleton;
 import com.github.bosik927.singleton.EnumSingleton;
 import com.github.bosik927.singleton.ThreadSafetySingleton;
 
 public class CreationPatternsDemo {
-    public static void main(String... args){
+    public static void main(String... args) {
         /*BASIC SINGLETON*/
         BasicSingleton basicSingleton = BasicSingleton.getInstance();
         basicSingleton.saySomething();
@@ -16,5 +17,22 @@ public class CreationPatternsDemo {
 
         /*ENUM SINGLETON*/
         EnumSingleton.INSTANCE.saySomething();
+
+        System.out.println();
+
+        /*SAMPLE BUILDER*/
+        Waiter waiter = new Waiter();
+        PizzaBuilder hawaiianPizzaBuilder = new HawaiianPizzaBuilder();
+        PizzaBuilder spicyPizzaBuilder = new SpicyPizzaBuilder();
+
+        waiter.setPizzaBuilder(hawaiianPizzaBuilder);
+        waiter.constructPizza();
+        Pizza hawaiianPizza = waiter.getPizza();
+        System.out.println(hawaiianPizza.toString());
+
+        waiter.setPizzaBuilder(spicyPizzaBuilder);
+        waiter.constructPizza();
+        Pizza spicyPizza = waiter.getPizza();
+        System.out.println(spicyPizza.toString());
     }
 }

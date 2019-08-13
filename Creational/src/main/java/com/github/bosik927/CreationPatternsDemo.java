@@ -44,5 +44,9 @@ public class CreationPatternsDemo {
                 .build();
 
         System.out.println(pizza);
+
+        System.out.println();
+
+        /*SAMPLE PROTOTYPE*/
     }
 }

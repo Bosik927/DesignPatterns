@@ -27,9 +27,7 @@ public class Employees implements Cloneable{
     }
 
     @Override
-    public Object clone() throws CloneNotSupportedException{
-        List<String> cloning = new ArrayList<>(this.getEmployees());
-        return new Employees(cloning);
+    public Object clone() throws CloneNotSupportedException {
+        return super.clone();
     }
-
 }

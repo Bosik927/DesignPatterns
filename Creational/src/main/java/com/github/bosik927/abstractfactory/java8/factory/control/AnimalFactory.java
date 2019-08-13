@@ -9,6 +9,19 @@ import com.github.bosik927.abstractfactory.java8.factory.boundary.AbstractFactor
 
 public class AnimalFactory implements AbstractFactory<Animal> {
 
+    private static AbstractFactory instance;
+
+    public static AbstractFactory getInstance() {
+        if (instance == null) {
+            synchronized (AbstractFactory.class) {
+                if (instance == null) {
+                    instance = new AnimalFactory();
+                }
+            }
+        }
+        return instance;
+    }
+
     @Override
     public Animal create(String animalType) {
         if (Animals.DOG.name().equalsIgnoreCase(animalType)) {
@@ -21,4 +34,6 @@ public class AnimalFactory implements AbstractFactory<Animal> {
         return null;
     }
 
+    private AnimalFactory() {
+    }
 }

@@ -8,6 +8,19 @@ import com.github.bosik927.abstractfactory.java8.factory.boundary.AbstractFactor
 
 public class ColorFactory implements AbstractFactory<Color> {
 
+    private static AbstractFactory instance;
+
+    public static AbstractFactory getInstance() {
+        if (instance == null) {
+            synchronized (AbstractFactory.class) {
+                if (instance == null) {
+                    instance = new ColorFactory();
+                }
+            }
+        }
+        return instance;
+    }
+
     @Override
     public Color create(String color) {
         if (Colors.RED.name().equalsIgnoreCase(color)) {
@@ -16,5 +29,8 @@ public class ColorFactory implements AbstractFactory<Color> {
             return new Blue();
         }
         return null;
+    }
+
+    private ColorFactory() {
     }
 }

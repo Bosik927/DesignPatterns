@@ -2,12 +2,15 @@ package com.github.bosik927;
 
 import com.github.bosik927.builder.innerStatic.StaticPizza;
 import com.github.bosik927.builder.sample.*;
+import com.github.bosik927.prototype.advance.Employees;
 import com.github.bosik927.singleton.BasicSingleton;
 import com.github.bosik927.singleton.EnumSingleton;
 import com.github.bosik927.singleton.ThreadSafetySingleton;
 
+import java.util.List;
+
 public class CreationPatternsDemo {
-    public static void main(String... args) {
+    public static void main(String... args) throws CloneNotSupportedException {
         /*BASIC SINGLETON*/
         BasicSingleton basicSingleton = BasicSingleton.getInstance();
         basicSingleton.saySomething();
@@ -48,5 +51,22 @@ public class CreationPatternsDemo {
         System.out.println();
 
         /*SAMPLE PROTOTYPE*/
+
+        /*ADVANCE PROTOTYPE*/
+        Employees employees = new Employees();
+        employees.loadData();
+
+        Employees newEmployees = (Employees) employees.clone();
+        Employees newEmployees2 = (Employees) employees.clone();
+
+        List<String> list = newEmployees.getEmployees();
+        list.add("Cris");
+
+        List<String> list1 = newEmployees2.getEmployees();
+        list1.remove("Bob");
+
+        System.out.println("emps List: "+employees.getEmployees());
+        System.out.println("empsNew List: "+list);
+        System.out.println("empsNew1 List: "+list1);
     }
 }

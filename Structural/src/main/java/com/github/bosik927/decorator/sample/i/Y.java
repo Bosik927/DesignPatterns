@@ -6,6 +6,7 @@ public class Y extends D {
         super(inner);
     }
 
+    @Override
     public void doIt() {
         super.doIt();
         doY();

@@ -8,6 +8,7 @@ public abstract class D implements I {
         core = inner;
     }
 
+    @Override
     public void doIt() {
         core.doIt();
     }

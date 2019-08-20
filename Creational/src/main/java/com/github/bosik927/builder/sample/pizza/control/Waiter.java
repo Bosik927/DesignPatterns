@@ -1,11 +1,14 @@
-package com.github.bosik927.builder.sample;
+package com.github.bosik927.builder.sample.pizza.control;
+
+import com.github.bosik927.builder.sample.pizza.entity.Pizza;
+import com.github.bosik927.builder.sample.pizza.boundary.PizzaBuilder;
 
 public class Waiter {
 
     private PizzaBuilder pizzaBuilder;
 
-    public void setPizzaBuilder(PizzaBuilder pb) {
-        pizzaBuilder = pb;
+    public void setPizzaBuilder(PizzaBuilder builder) {
+        pizzaBuilder = builder;
     }
 
     public Pizza getPizza() {

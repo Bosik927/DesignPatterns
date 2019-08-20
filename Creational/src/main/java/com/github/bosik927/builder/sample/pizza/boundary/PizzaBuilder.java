@@ -1,4 +1,6 @@
-package com.github.bosik927.builder.sample;
+package com.github.bosik927.builder.sample.pizza.boundary;
+
+import com.github.bosik927.builder.sample.pizza.entity.Pizza;
 
 abstract public class PizzaBuilder {
 

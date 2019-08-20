@@ -1,4 +1,6 @@
-package com.github.bosik927.builder.sample;
+package com.github.bosik927.builder.sample.pizza.control;
+
+import com.github.bosik927.builder.sample.pizza.boundary.PizzaBuilder;
 
 public class SpicyPizzaBuilder extends PizzaBuilder {
 

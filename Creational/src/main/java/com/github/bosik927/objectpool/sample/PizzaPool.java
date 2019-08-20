@@ -1,6 +1,6 @@
 package com.github.bosik927.objectpool.sample;
 
-import com.github.bosik927.builder.sample.Pizza;
+import com.github.bosik927.builder.sample.pizza.entity.Pizza;
 
 public class PizzaPool extends ObjectPool<Pizza> {
 

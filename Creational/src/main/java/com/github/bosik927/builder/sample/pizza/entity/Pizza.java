@@ -1,4 +1,4 @@
-package com.github.bosik927.builder.sample;
+package com.github.bosik927.builder.sample.pizza.entity;
 
 public class Pizza {
 

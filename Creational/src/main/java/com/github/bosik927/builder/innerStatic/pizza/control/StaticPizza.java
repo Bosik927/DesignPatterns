@@ -1,4 +1,4 @@
-package com.github.bosik927.builder.innerStatic;
+package com.github.bosik927.builder.innerStatic.pizza.control;
 
 public class StaticPizza {
 

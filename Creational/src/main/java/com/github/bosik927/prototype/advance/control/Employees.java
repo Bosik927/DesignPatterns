@@ -1,4 +1,4 @@
-package com.github.bosik927.prototype.advance;
+package com.github.bosik927.prototype.advance.control;
 
 import java.util.ArrayList;
 import java.util.List;

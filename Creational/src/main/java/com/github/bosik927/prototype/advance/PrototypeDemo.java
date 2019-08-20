@@ -1,15 +1,12 @@
-package com.github.bosik927;
+package com.github.bosik927.prototype.advance;
 
-import com.github.bosik927.prototype.advance.Employees;
+import com.github.bosik927.prototype.advance.control.Employees;
 
 import java.util.List;
 
-public class CreationPatternsDemo {
+public class PrototypeDemo {
 
     public static void main(String... args) throws CloneNotSupportedException {
-        /*SAMPLE PROTOTYPE*/
-
-        /*ADVANCE PROTOTYPE*/
         Employees employees = new Employees();
         employees.loadData();
 

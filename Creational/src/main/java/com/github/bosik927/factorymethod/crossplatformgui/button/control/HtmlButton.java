@@ -1,4 +1,6 @@
-package com.github.bosik927.factorymethod.crossplatformgui.button;
+package com.github.bosik927.factorymethod.crossplatformgui.button.control;
+
+import com.github.bosik927.factorymethod.crossplatformgui.button.boundary.Button;
 
 public class HtmlButton implements Button {
 

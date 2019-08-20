@@ -1,8 +1,8 @@
 package com.github.bosik927.factorymethod.crossplatformgui;
 
-import com.github.bosik927.factorymethod.crossplatformgui.dialog.Dialog;
-import com.github.bosik927.factorymethod.crossplatformgui.dialog.HtmlDialog;
-import com.github.bosik927.factorymethod.crossplatformgui.dialog.WindowsDialog;
+import com.github.bosik927.factorymethod.crossplatformgui.dialog.boundary.Dialog;
+import com.github.bosik927.factorymethod.crossplatformgui.dialog.control.HtmlDialog;
+import com.github.bosik927.factorymethod.crossplatformgui.dialog.control.WindowsDialog;
 
 public class Demo {
 
@@ -14,6 +14,7 @@ public class Demo {
     }
 
     static void configure() {
+        /*CHANGE "Windows 10" to see the difference */
         if (System.getProperty("os.name").equals("Windows 10")) {
             dialog = new WindowsDialog();
         } else {

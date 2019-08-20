@@ -1,5 +1,11 @@
 package com.github.bosik927.factorymethod.sample;
 
+
+import com.github.bosik927.factorymethod.sample.reader.boundary.ImageReader;
+import com.github.bosik927.factorymethod.sample.reader.control.GifReader;
+import com.github.bosik927.factorymethod.sample.reader.control.JpegReader;
+import com.github.bosik927.factorymethod.sample.reader.entity.DecodedImage;
+
 public class FactoryMethodDemo {
 
     public static void main(String[] args) {
@@ -10,8 +16,7 @@ public class FactoryMethodDemo {
 
         if (format.equals("gif")) {
             reader = new GifReader(image);
-        }
-        if (format.equals("jpeg")) {
+        }else if (format.equals("jpeg")) {
             reader = new JpegReader(image);
         }
         assert reader != null;

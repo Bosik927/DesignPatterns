@@ -1,4 +1,6 @@
-package com.github.bosik927.factorymethod.crossplatformgui.button;
+package com.github.bosik927.factorymethod.crossplatformgui.button.control;
+
+import com.github.bosik927.factorymethod.crossplatformgui.button.boundary.Button;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -10,6 +12,7 @@ import java.awt.FlowLayout;
 import java.awt.Font;
 
 public class WindowsButton implements Button {
+
     private JPanel panel = new JPanel();
     private JFrame frame = new JFrame();
     private JButton button;

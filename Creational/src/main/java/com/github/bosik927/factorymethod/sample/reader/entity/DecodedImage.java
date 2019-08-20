@@ -1,6 +1,6 @@
-package com.github.bosik927.factorymethod.sample;
+package com.github.bosik927.factorymethod.sample.reader.entity;
 
-class DecodedImage {
+public class DecodedImage {
 
     private String image;
 

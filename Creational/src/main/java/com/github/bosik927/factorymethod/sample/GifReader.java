@@ -1,4 +1,4 @@
-package com.github.bosik927.factorymethod;
+package com.github.bosik927.factorymethod.sample;
 
 class GifReader implements ImageReader {
 

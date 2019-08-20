@@ -1,7 +1,8 @@
-package com.github.bosik927.abstractfactory.prototype.factory;
+package com.github.bosik927.abstractfactory.prototype.factory.control;
 
-import com.github.bosik927.abstractfactory.prototype.expression.Expression;
-import com.github.bosik927.abstractfactory.prototype.expression.NotPCPhase;
+import com.github.bosik927.abstractfactory.prototype.expression.control.Expression;
+import com.github.bosik927.abstractfactory.prototype.expression.control.NotPCPhase;
+import com.github.bosik927.abstractfactory.prototype.factory.boundary.AbstractFactory;
 
 public class NotPCFactory extends AbstractFactory {
 

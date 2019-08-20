@@ -1,8 +1,8 @@
 package com.github.bosik927.abstractfactory.prototype;
 
-import com.github.bosik927.abstractfactory.prototype.factory.AbstractFactory;
-import com.github.bosik927.abstractfactory.prototype.factory.NotPCFactory;
-import com.github.bosik927.abstractfactory.prototype.factory.PCFactory;
+import com.github.bosik927.abstractfactory.prototype.factory.boundary.AbstractFactory;
+import com.github.bosik927.abstractfactory.prototype.factory.control.NotPCFactory;
+import com.github.bosik927.abstractfactory.prototype.factory.control.PCFactory;
 
 public class FactoryFmProto {
 

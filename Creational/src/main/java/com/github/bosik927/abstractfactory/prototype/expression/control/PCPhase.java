@@ -1,14 +1,14 @@
-package com.github.bosik927.abstractfactory.prototype.expression;
+package com.github.bosik927.abstractfactory.prototype.expression.control;
 
 public class PCPhase extends Expression {
 
     private static int next = 0;
-    private static final String[] list = {"\"animal companion\"", "\"vertically challenged\"",
+    private static final String[] PHASES = {"\"animal companion\"", "\"vertically challenged\"",
             "\"factually inaccurate\"", "\"chronologically gifted\""};
 
     public PCPhase() {
-        super(list[next]);
-        next = (next + 1) % list.length;
+        super(PHASES[next]);
+        next = (next + 1) % PHASES.length;
     }
 
     @Override

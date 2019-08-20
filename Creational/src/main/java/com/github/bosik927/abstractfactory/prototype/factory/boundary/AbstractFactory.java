@@ -1,6 +1,6 @@
-package com.github.bosik927.abstractfactory.prototype.factory;
+package com.github.bosik927.abstractfactory.prototype.factory.boundary;
 
-import com.github.bosik927.abstractfactory.prototype.expression.Expression;
+import com.github.bosik927.abstractfactory.prototype.expression.control.Expression;
 
 public abstract class AbstractFactory {
 

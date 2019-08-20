@@ -1,7 +1,8 @@
-package com.github.bosik927.abstractfactory.prototype.factory;
+package com.github.bosik927.abstractfactory.prototype.factory.control;
 
-import com.github.bosik927.abstractfactory.prototype.expression.Expression;
-import com.github.bosik927.abstractfactory.prototype.expression.PCPhase;
+import com.github.bosik927.abstractfactory.prototype.expression.control.Expression;
+import com.github.bosik927.abstractfactory.prototype.expression.control.PCPhase;
+import com.github.bosik927.abstractfactory.prototype.factory.boundary.AbstractFactory;
 
 public class PCFactory extends AbstractFactory {
 

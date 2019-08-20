@@ -1,4 +1,4 @@
-package com.github.bosik927.abstractfactory.prototype.expression;
+package com.github.bosik927.abstractfactory.prototype.expression.control;
 
 /*PROTOTYPE*/
 public class Expression implements Cloneable{

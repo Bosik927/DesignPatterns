@@ -1,10 +1,10 @@
-package com.github.bosik927.singleton;
+package com.github.bosik927.singleton.threadsafety;
 
 public final class ThreadSafetySingleton {
 
     private static volatile ThreadSafetySingleton instance;
 
-    public static ThreadSafetySingleton getInstance(String value) {
+    public static ThreadSafetySingleton getInstance() {
         if (instance == null) {
             synchronized (ThreadSafetySingleton.class) {
                 if (instance == null) {

@@ -1,4 +1,4 @@
-package com.github.bosik927.singleton;
+package com.github.bosik927.singleton.sample;
 
 public class BasicSingleton {
 
@@ -6,12 +6,12 @@ public class BasicSingleton {
         return SingletonHolder.INSTANCE;
     }
 
-    private static class SingletonHolder {
-        private static final BasicSingleton INSTANCE = new BasicSingleton();
-    }
-
     public void saySomething() {
         System.out.println("I'm basic Singleton");
+    }
+
+    private static class SingletonHolder {
+        private static final BasicSingleton INSTANCE = new BasicSingleton();
     }
 
     private BasicSingleton() {

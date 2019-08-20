@@ -1,29 +1,18 @@
 package com.github.bosik927;
 
 import com.github.bosik927.builder.innerStatic.StaticPizza;
-import com.github.bosik927.builder.sample.*;
+import com.github.bosik927.builder.sample.HawaiianPizzaBuilder;
+import com.github.bosik927.builder.sample.Pizza;
+import com.github.bosik927.builder.sample.PizzaBuilder;
+import com.github.bosik927.builder.sample.SpicyPizzaBuilder;
+import com.github.bosik927.builder.sample.Waiter;
 import com.github.bosik927.prototype.advance.Employees;
-import com.github.bosik927.singleton.BasicSingleton;
-import com.github.bosik927.singleton.EnumSingleton;
-import com.github.bosik927.singleton.ThreadSafetySingleton;
 
 import java.util.List;
 
 public class CreationPatternsDemo {
+
     public static void main(String... args) throws CloneNotSupportedException {
-        /*BASIC SINGLETON*/
-        BasicSingleton basicSingleton = BasicSingleton.getInstance();
-        basicSingleton.saySomething();
-
-        /*THREAD SAFETY SINGLETON*/
-        ThreadSafetySingleton threadSafetySingleton = ThreadSafetySingleton.getInstance("");
-        threadSafetySingleton.saySomething();
-
-        /*ENUM SINGLETON*/
-        EnumSingleton.INSTANCE.saySomething();
-
-        System.out.println();
-
         /*SAMPLE BUILDER*/
         Waiter waiter = new Waiter();
         PizzaBuilder hawaiianPizzaBuilder = new HawaiianPizzaBuilder();

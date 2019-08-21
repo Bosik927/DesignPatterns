@@ -1,6 +1,10 @@
 package com.github.bosik927.decorator.sample;
 
-import com.github.bosik927.decorator.sample.i.*;
+import com.github.bosik927.decorator.sample.i.boundary.I;
+import com.github.bosik927.decorator.sample.i.control.A;
+import com.github.bosik927.decorator.sample.i.control.X;
+import com.github.bosik927.decorator.sample.i.control.Y;
+import com.github.bosik927.decorator.sample.i.control.Z;
 
 public class DecoratorDemo {
 

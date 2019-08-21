@@ -1,4 +1,4 @@
-package com.github.bosik927.decorator.sample.i;
+package com.github.bosik927.decorator.sample.i.boundary;
 
 public abstract class D implements I {
 

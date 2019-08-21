@@ -1,4 +1,7 @@
-package com.github.bosik927.decorator.sample.i;
+package com.github.bosik927.decorator.sample.i.control;
+
+import com.github.bosik927.decorator.sample.i.boundary.D;
+import com.github.bosik927.decorator.sample.i.boundary.I;
 
 public class X extends D {
 

@@ -1,4 +1,6 @@
-package com.github.bosik927.decorator.christmastree;
+package com.github.bosik927.decorator.christmastree.control;
+
+import com.github.bosik927.decorator.christmastree.boundary.ChristmasTree;
 
 public class ChristmasTreeImpl implements ChristmasTree {
 

@@ -1,4 +1,4 @@
-package com.github.bosik927.decorator.christmastree;
+package com.github.bosik927.decorator.christmastree.boundary;
 
 public abstract class TreeDecorator implements ChristmasTree {
 

@@ -1,6 +1,7 @@
-package com.github.bosik927.facade.sample.point;
+package com.github.bosik927.facade.sample.point.shapes.control;
 
 public class Line {
+
     private Point o, e;
 
     public Line(Point ori, Point end) {

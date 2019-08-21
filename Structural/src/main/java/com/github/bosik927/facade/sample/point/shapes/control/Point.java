@@ -1,4 +1,4 @@
-package com.github.bosik927.facade.sample.point;
+package com.github.bosik927.facade.sample.point.shapes.control;
 
 public class Point {
 
@@ -12,7 +12,6 @@ public class Point {
         return pointCartesian.toString();
     }
 
-    // 4. Wrapper maps
     public void move(int x, int y) {
         pointCartesian.move(x, y);
     }

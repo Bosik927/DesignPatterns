@@ -1,7 +1,7 @@
 package com.github.bosik927.facade.sample;
 
-import com.github.bosik927.facade.sample.point.Line;
-import com.github.bosik927.facade.sample.point.Point;
+import com.github.bosik927.facade.sample.point.shapes.control.Line;
+import com.github.bosik927.facade.sample.point.shapes.control.Point;
 
 public class FacadeDemo {
 

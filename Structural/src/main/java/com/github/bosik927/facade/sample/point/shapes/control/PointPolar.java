@@ -1,4 +1,4 @@
-package com.github.bosik927.facade.sample.point;
+package com.github.bosik927.facade.sample.point.shapes.control;
 
 public class PointPolar {
 

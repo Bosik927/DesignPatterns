@@ -7,7 +7,7 @@ import com.github.bosik927.prototype.common.shapes.boundary.Shape;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Demo {
+public class PrototypeDemo {
 
     public static void main(String[] args) {
         List<Shape> shapes = new ArrayList<>();

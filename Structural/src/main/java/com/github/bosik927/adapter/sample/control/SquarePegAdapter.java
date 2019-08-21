@@ -1,4 +1,4 @@
-package com.github.bosik927.adapter;
+package com.github.bosik927.adapter.sample.control;
 
 // SquarePeg Wrapper
 public class SquarePegAdapter {

@@ -5,6 +5,8 @@ import com.github.bosik927.bridge.vehicle.workshops.boundary.WorkShop;
 
 import java.util.concurrent.TimeUnit;
 
+import static com.github.bosik927.bridge.vehicle.workshops.entity.WorkShopConstants.WORK_STATEMENT_PATTERN;
+
 public class PaintWorkShop extends WorkShop {
 
     public PaintWorkShop() {
@@ -20,6 +22,6 @@ public class PaintWorkShop extends WorkShop {
         } catch (InterruptedException exp) {
             // nothing to do for now.
         }
-        System.out.printf("(Time taken: %d millis), Done.\n", timeToTake);
+        System.out.printf(WORK_STATEMENT_PATTERN, timeToTake);
     }
 }

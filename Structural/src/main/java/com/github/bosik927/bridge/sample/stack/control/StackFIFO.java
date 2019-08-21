@@ -1,13 +1,16 @@
-package com.github.bosik927.bridge.sample.stack;
+package com.github.bosik927.bridge.sample.stack.control;
 
-import com.github.bosik927.bridge.sample.stackimpl.StackImpl;
-import com.github.bosik927.bridge.sample.stackimpl.StackList;
+import com.github.bosik927.bridge.sample.stackimpl.boundary.StackImpl;
+import com.github.bosik927.bridge.sample.stackimpl.control.StackList;
+
+import static com.github.bosik927.bridge.sample.stack.entity.StackConstants.ARRAY;
 
 public class StackFIFO extends Stack {
+
     private StackImpl stackImpl = new StackList();
 
     public StackFIFO() {
-        super("array");
+        super(ARRAY);
     }
 
     public StackFIFO(String s) {

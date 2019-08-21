@@ -1,4 +1,6 @@
-package com.github.bosik927.bridge.sample.stackimpl;
+package com.github.bosik927.bridge.sample.stackimpl.control;
+
+import com.github.bosik927.bridge.sample.stackimpl.boundary.StackImpl;
 
 public class StackArray implements StackImpl {
 

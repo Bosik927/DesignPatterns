@@ -1,4 +1,4 @@
-package com.github.bosik927.bridge.sample.stackimpl;
+package com.github.bosik927.bridge.sample.stackimpl.entity;
 
 public class Node {
 

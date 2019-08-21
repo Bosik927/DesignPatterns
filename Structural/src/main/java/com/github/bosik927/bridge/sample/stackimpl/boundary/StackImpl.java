@@ -1,6 +1,7 @@
-package com.github.bosik927.bridge.sample.stackimpl;
+package com.github.bosik927.bridge.sample.stackimpl.boundary;
 
 public interface StackImpl {
+
     void push(int i);
 
     int pop();

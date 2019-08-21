@@ -1,10 +1,12 @@
-package com.github.bosik927.bridge.sample.stack;
+package com.github.bosik927.bridge.sample.stack.control;
+
+import static com.github.bosik927.bridge.sample.stack.entity.StackConstants.ARRAY;
 
 public class StackHanoi extends Stack {
     private int totalRejected = 0;
 
     public StackHanoi() {
-        super("array");
+        super(ARRAY);
     }
 
     public StackHanoi(String s) {

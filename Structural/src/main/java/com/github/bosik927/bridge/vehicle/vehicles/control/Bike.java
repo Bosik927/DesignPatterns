@@ -4,6 +4,8 @@ import com.github.bosik927.bridge.vehicle.vehicles.boundary.Vehicle;
 
 public class Bike extends Vehicle {
 
+    private static final int MIN_WORK_TIME = 5;
+
     @Override
     public void manufacture() {
         System.out.println("Manufactoring Bike...");
@@ -14,6 +16,6 @@ public class Bike extends Vehicle {
 
     @Override
     public int minWorkTime() {
-        return 5;
+        return MIN_WORK_TIME;
     }
 }

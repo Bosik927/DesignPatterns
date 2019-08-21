@@ -1,8 +1,10 @@
-package com.github.bosik927.flyweight.java8;
+package com.github.bosik927.flyweight.java8.Vehicle.entity;
+
+import com.github.bosik927.flyweight.java8.Vehicle.boundary.Vehicle;
 
 import java.awt.Color;
 
-public class Car implements Vehicle{
+public class Car implements Vehicle {
 
     private Engine engine;
     private Color color;
@@ -14,12 +16,10 @@ public class Car implements Vehicle{
 
     @Override
     public void start() {
-
     }
 
     @Override
     public void stop() {
-
     }
 
     @Override

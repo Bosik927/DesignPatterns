@@ -1,4 +1,4 @@
-package com.github.bosik927.flyweight.sample;
+package com.github.bosik927.flyweight.sample.control;
 
 public class Gazillion {
 
@@ -11,7 +11,7 @@ public class Gazillion {
         num++;
     }
 
-    void report() {
+    public void report() {
         System.out.print(" " + row + col);
     }
 }

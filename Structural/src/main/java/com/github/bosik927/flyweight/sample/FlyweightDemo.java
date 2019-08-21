@@ -1,5 +1,7 @@
 package com.github.bosik927.flyweight.sample;
 
+import com.github.bosik927.flyweight.sample.control.Gazillion;
+
 public class FlyweightDemo {
 
     private static final int ROWS = 6, COLS = 10;

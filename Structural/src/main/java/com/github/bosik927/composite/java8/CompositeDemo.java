@@ -1,9 +1,9 @@
 package com.github.bosik927.composite.java8;
 
-import com.github.bosik927.composite.java8.departments.Department;
-import com.github.bosik927.composite.java8.departments.FinancialDepartment;
-import com.github.bosik927.composite.java8.departments.HeadDepartment;
-import com.github.bosik927.composite.java8.departments.SalesDepartment;
+import com.github.bosik927.composite.java8.departments.boundary.Department;
+import com.github.bosik927.composite.java8.departments.control.FinancialDepartment;
+import com.github.bosik927.composite.java8.departments.control.HeadDepartment;
+import com.github.bosik927.composite.java8.departments.control.SalesDepartment;
 
 public class CompositeDemo {
 

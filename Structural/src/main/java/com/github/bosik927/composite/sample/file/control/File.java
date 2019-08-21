@@ -1,6 +1,7 @@
-package com.github.bosik927.composite.sample.file;
+package com.github.bosik927.composite.sample.file.control;
 
 import com.github.bosik927.composite.sample.CompositeDemo;
+import com.github.bosik927.composite.sample.file.boundary.AbstractFile;
 
 public class File implements AbstractFile {
 

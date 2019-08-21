@@ -1,4 +1,4 @@
-package com.github.bosik927.composite.simple.components;
+package com.github.bosik927.composite.simple.components.boundary;
 
 public abstract class Composite implements Component {
 
@@ -23,6 +23,5 @@ public abstract class Composite implements Component {
         }
         System.out.println("END FOR" + value);
         System.out.println();
-
     }
 }

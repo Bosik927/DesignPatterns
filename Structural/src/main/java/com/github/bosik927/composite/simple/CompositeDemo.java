@@ -1,9 +1,9 @@
 package com.github.bosik927.composite.simple;
 
-import com.github.bosik927.composite.simple.components.Column;
-import com.github.bosik927.composite.simple.components.Composite;
-import com.github.bosik927.composite.simple.components.Primitive;
-import com.github.bosik927.composite.simple.components.Row;
+import com.github.bosik927.composite.simple.components.control.Column;
+import com.github.bosik927.composite.simple.components.boundary.Composite;
+import com.github.bosik927.composite.simple.components.control.Primitive;
+import com.github.bosik927.composite.simple.components.control.Row;
 
 public class CompositeDemo {
 

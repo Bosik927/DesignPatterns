@@ -1,4 +1,6 @@
-package com.github.bosik927.composite.java8.departments;
+package com.github.bosik927.composite.java8.departments.control;
+
+import com.github.bosik927.composite.java8.departments.boundary.Department;
 
 public class FinancialDepartment implements Department {
 

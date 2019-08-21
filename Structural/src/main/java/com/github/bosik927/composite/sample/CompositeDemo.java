@@ -1,7 +1,7 @@
 package com.github.bosik927.composite.sample;
 
-import com.github.bosik927.composite.sample.file.Directory;
-import com.github.bosik927.composite.sample.file.File;
+import com.github.bosik927.composite.sample.file.control.Directory;
+import com.github.bosik927.composite.sample.file.control.File;
 
 public class CompositeDemo {
 

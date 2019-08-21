@@ -1,6 +1,7 @@
-package com.github.bosik927.command.common.light;
+package com.github.bosik927.command.common.commands.control;
 
-import com.github.bosik927.command.common.Command;
+import com.github.bosik927.command.common.commands.boundary.Command;
+import com.github.bosik927.command.common.commands.entity.Light;
 
 public class LightOffCommand implements Command {
 
@@ -10,6 +11,7 @@ public class LightOffCommand implements Command {
         this.light = light;
     }
 
+    @Override
     public void execute() {
         light.off();
     }

@@ -1,4 +1,4 @@
-package com.github.bosik927.command.common.stereo;
+package com.github.bosik927.command.common.commands.entity;
 
 public class Stereo {
 

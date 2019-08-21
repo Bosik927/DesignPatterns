@@ -1,9 +1,9 @@
-package com.github.bosik927.command.advance;
+package com.github.bosik927.command.advance.comands.control;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
-class ReflectCommand {
+public class ReflectCommand {
 
     private Object receiver;
     private Method action;

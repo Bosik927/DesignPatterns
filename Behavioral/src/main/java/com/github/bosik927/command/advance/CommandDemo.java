@@ -1,5 +1,8 @@
 package com.github.bosik927.command.advance;
 
+import com.github.bosik927.command.advance.comands.control.ReflectCommand;
+import com.github.bosik927.command.advance.comands.control.SimpleCommand;
+
 public class CommandDemo {
 
     public static void main(String[] args) {

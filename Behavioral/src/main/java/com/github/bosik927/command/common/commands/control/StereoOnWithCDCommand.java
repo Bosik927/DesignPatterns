@@ -1,6 +1,7 @@
-package com.github.bosik927.command.common.stereo;
+package com.github.bosik927.command.common.commands.control;
 
-import com.github.bosik927.command.common.Command;
+import com.github.bosik927.command.common.commands.boundary.Command;
+import com.github.bosik927.command.common.commands.entity.Stereo;
 
 public class StereoOnWithCDCommand implements Command {
 
@@ -10,6 +11,7 @@ public class StereoOnWithCDCommand implements Command {
         this.stereo = stereo;
     }
 
+    @Override
     public void execute() {
         stereo.on();
         stereo.setCD();

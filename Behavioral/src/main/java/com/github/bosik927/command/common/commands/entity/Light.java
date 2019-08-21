@@ -1,4 +1,4 @@
-package com.github.bosik927.command.common.light;
+package com.github.bosik927.command.common.commands.entity;
 
 public class Light {
 

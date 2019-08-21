@@ -1,4 +1,6 @@
-package com.github.bosik927.command.common;
+package com.github.bosik927.command.common.commands.control;
+
+import com.github.bosik927.command.common.commands.boundary.Command;
 
 public class SimpleRemoteControl {
 

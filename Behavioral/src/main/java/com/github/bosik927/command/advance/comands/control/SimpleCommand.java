@@ -1,6 +1,6 @@
-package com.github.bosik927.command.advance;
+package com.github.bosik927.command.advance.comands.control;
 
-class SimpleCommand {
+public class SimpleCommand {
 
     private int state;
 

@@ -1,6 +1,7 @@
-package com.github.bosik927.iterator.common.iterators;
+package com.github.bosik927.iterator.common.iterators.control;
 
-import com.github.bosik927.iterator.common.Notification;
+import com.github.bosik927.iterator.common.iterators.entity.Notification;
+import com.github.bosik927.iterator.common.iterators.boundary.Iterator;
 
 public class NotificationIterator implements Iterator {
 

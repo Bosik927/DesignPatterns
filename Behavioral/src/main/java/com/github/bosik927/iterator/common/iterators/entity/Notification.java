@@ -1,4 +1,4 @@
-package com.github.bosik927.iterator.common;
+package com.github.bosik927.iterator.common.iterators.entity;
 
 public class Notification {
 

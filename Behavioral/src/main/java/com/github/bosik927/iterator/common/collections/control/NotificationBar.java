@@ -1,7 +1,7 @@
-package com.github.bosik927.iterator.common.collections;
+package com.github.bosik927.iterator.common.collections.control;
 
-import com.github.bosik927.iterator.common.iterators.Iterator;
-import com.github.bosik927.iterator.common.Notification;
+import com.github.bosik927.iterator.common.iterators.boundary.Iterator;
+import com.github.bosik927.iterator.common.iterators.entity.Notification;
 
 public class NotificationBar {
 

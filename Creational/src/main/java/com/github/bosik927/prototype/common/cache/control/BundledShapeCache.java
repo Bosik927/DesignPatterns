@@ -30,12 +30,19 @@ public class BundledShapeCache implements Cacheable<Shape> {
         cache.put("Medium blue rectangle", rectangle);
     }
 
+    @Override
     public Shape put(String key, Shape shape) {
         cache.put(key, shape);
         return shape;
     }
 
+    @Override
     public Shape get(String key) {
         return cache.get(key).clone();
+    }
+
+    @Override
+    public void remove(String key) {
+        cache.remove(key);
     }
 }

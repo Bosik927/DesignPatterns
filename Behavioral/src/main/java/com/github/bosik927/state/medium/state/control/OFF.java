@@ -1,4 +1,4 @@
-package com.github.bosik927.state.medium;
+package com.github.bosik927.state.medium.state.control;
 
 class OFF extends State {
 

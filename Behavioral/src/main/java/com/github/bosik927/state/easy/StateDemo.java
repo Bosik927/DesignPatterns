@@ -1,5 +1,7 @@
 package com.github.bosik927.state.easy;
 
+import com.github.bosik927.state.easy.control.Chain;
+
 import java.io.IOException;
 import java.io.InputStreamReader;
 

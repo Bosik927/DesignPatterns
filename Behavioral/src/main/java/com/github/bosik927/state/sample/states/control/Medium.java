@@ -1,6 +1,6 @@
-package com.github.bosik927.state.sample.states;
+package com.github.bosik927.state.sample.states.control;
 
-import com.github.bosik927.state.sample.CeilingFanPullChain;
+import com.github.bosik927.state.sample.states.boundary.State;
 
 public class Medium implements State {
 

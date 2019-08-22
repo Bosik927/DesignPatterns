@@ -1,5 +1,7 @@
 package com.github.bosik927.state.medium;
 
+import com.github.bosik927.state.medium.state.control.Button;
+
 import java.io.IOException;
 import java.io.InputStreamReader;
 

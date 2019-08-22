@@ -1,4 +1,4 @@
-package com.github.bosik927.state.easy;
+package com.github.bosik927.state.easy.control;
 
 public class Chain {
 

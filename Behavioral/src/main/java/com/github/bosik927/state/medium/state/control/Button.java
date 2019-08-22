@@ -1,4 +1,4 @@
-package com.github.bosik927.state.medium;
+package com.github.bosik927.state.medium.state.control;
 
 public class Button {
 

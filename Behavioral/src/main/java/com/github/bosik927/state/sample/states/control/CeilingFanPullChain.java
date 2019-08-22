@@ -1,7 +1,6 @@
-package com.github.bosik927.state.sample;
+package com.github.bosik927.state.sample.states.control;
 
-import com.github.bosik927.state.sample.states.Off;
-import com.github.bosik927.state.sample.states.State;
+import com.github.bosik927.state.sample.states.boundary.State;
 
 public class CeilingFanPullChain {
 

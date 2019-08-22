@@ -1,5 +1,7 @@
 package com.github.bosik927.state.sample;
 
+import com.github.bosik927.state.sample.states.control.CeilingFanPullChain;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;

@@ -1,6 +1,6 @@
-package com.github.bosik927.observer.sample;
+package com.github.bosik927.observer.sample.observers.control;
 
-import com.github.bosik927.observer.sample.observers.Observer;
+import com.github.bosik927.observer.sample.observers.boundary.Observer;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -19,13 +19,11 @@ public class Subject {
     }
 
     public void setState(int value) {
-        this.state = value;
+        state = value;
         execute();
     }
 
     private void execute() {
-        for (Observer observer : observers) {
-            observer.update();
-        }
+        observers.forEach(Observer::update);
     }
 }

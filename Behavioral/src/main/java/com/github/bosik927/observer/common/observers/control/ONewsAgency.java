@@ -1,4 +1,4 @@
-package com.github.bosik927.observer.common.observers;
+package com.github.bosik927.observer.common.observers.control;
 
 import java.util.Observable;
 

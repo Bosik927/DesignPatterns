@@ -1,6 +1,6 @@
-package com.github.bosik927.observer.sample.observers;
+package com.github.bosik927.observer.sample.observers.control;
 
-import com.github.bosik927.observer.sample.Subject;
+import com.github.bosik927.observer.sample.observers.boundary.Observer;
 
 public class OctObserver extends Observer {
 

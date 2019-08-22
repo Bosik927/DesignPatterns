@@ -1,4 +1,4 @@
-package com.github.bosik927.observer.common.observers;
+package com.github.bosik927.observer.common.observers.control;
 
 import java.util.Observable;
 import java.util.Observer;
@@ -9,7 +9,7 @@ public class ONewsChannel implements Observer {
 
     @Override
     public void update(Observable o, Object news) {
-        this.setNews((String) news);
+        setNews((String) news);
     }
 
     public String getNews() {

@@ -1,4 +1,4 @@
-package com.github.bosik927.observer.common.property;
+package com.github.bosik927.observer.common.property.control;
 
 import java.beans.PropertyChangeListener;
 import java.beans.PropertyChangeSupport;

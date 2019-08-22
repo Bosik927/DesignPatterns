@@ -1,4 +1,4 @@
-package com.github.bosik927.observer.secure.alarms;
+package com.github.bosik927.observer.secure.alarms.control;
 
 public class CheckList {
 

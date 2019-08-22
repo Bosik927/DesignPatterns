@@ -1,6 +1,6 @@
-package com.github.bosik927.observer.common.channels;
+package com.github.bosik927.observer.common.channels.control;
 
-import com.github.bosik927.observer.common.channels.Channel;
+import com.github.bosik927.observer.common.channels.boundary.Channel;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -20,8 +20,6 @@ public class NewsAgency {
 
     public void setNews(String news) {
         this.news = news;
-        for (Channel channel : this.channels) {
-            channel.update(this.news);
-        }
+        channels.forEach(channel -> channel.update(news));
     }
 }

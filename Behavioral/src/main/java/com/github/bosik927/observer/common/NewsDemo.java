@@ -1,11 +1,11 @@
 package com.github.bosik927.observer.common;
 
-import com.github.bosik927.observer.common.channels.NewsAgency;
-import com.github.bosik927.observer.common.channels.NewsChannel;
-import com.github.bosik927.observer.common.observers.ONewsAgency;
-import com.github.bosik927.observer.common.observers.ONewsChannel;
-import com.github.bosik927.observer.common.property.PCLNewsAgency;
-import com.github.bosik927.observer.common.property.PCLNewsChannel;
+import com.github.bosik927.observer.common.channels.control.NewsAgency;
+import com.github.bosik927.observer.common.channels.control.NewsChannel;
+import com.github.bosik927.observer.common.observers.control.ONewsAgency;
+import com.github.bosik927.observer.common.observers.control.ONewsChannel;
+import com.github.bosik927.observer.common.property.control.PCLNewsAgency;
+import com.github.bosik927.observer.common.property.control.PCLNewsChannel;
 
 public class NewsDemo {
 

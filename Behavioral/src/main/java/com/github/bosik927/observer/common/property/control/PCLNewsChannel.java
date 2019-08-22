@@ -1,4 +1,4 @@
-package com.github.bosik927.observer.common.property;
+package com.github.bosik927.observer.common.property.control;
 
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
@@ -8,7 +8,7 @@ public class PCLNewsChannel implements PropertyChangeListener {
     private String news;
 
     public void propertyChange(PropertyChangeEvent evt) {
-        this.setNews((String) evt.getNewValue());
+        setNews((String) evt.getNewValue());
     }
 
     public String getNews() {

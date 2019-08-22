@@ -1,8 +1,9 @@
 package com.github.bosik927.observer.sample;
 
-import com.github.bosik927.observer.sample.observers.BinObserver;
-import com.github.bosik927.observer.sample.observers.HexObserver;
-import com.github.bosik927.observer.sample.observers.OctObserver;
+import com.github.bosik927.observer.sample.observers.control.BinObserver;
+import com.github.bosik927.observer.sample.observers.control.HexObserver;
+import com.github.bosik927.observer.sample.observers.control.OctObserver;
+import com.github.bosik927.observer.sample.observers.control.Subject;
 
 import java.util.Scanner;
 

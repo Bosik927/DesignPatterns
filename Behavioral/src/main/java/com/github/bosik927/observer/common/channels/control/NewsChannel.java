@@ -1,4 +1,6 @@
-package com.github.bosik927.observer.common.channels;
+package com.github.bosik927.observer.common.channels.control;
+
+import com.github.bosik927.observer.common.channels.boundary.Channel;
 
 public class NewsChannel implements Channel {
 

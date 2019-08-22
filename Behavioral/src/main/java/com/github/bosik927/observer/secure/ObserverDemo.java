@@ -1,8 +1,9 @@
 package com.github.bosik927.observer.secure;
 
-import com.github.bosik927.observer.secure.alarms.Gates;
-import com.github.bosik927.observer.secure.alarms.Lighting;
-import com.github.bosik927.observer.secure.alarms.Surveillance;
+import com.github.bosik927.observer.secure.alarms.control.Gates;
+import com.github.bosik927.observer.secure.alarms.control.Lighting;
+import com.github.bosik927.observer.secure.alarms.control.SensorSystem;
+import com.github.bosik927.observer.secure.alarms.control.Surveillance;
 
 public class ObserverDemo {
 

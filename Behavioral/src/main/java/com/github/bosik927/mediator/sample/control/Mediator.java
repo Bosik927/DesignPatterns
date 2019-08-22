@@ -1,6 +1,7 @@
-package com.github.bosik927.mediator.sample;
+package com.github.bosik927.mediator.sample.control;
 
 public class Mediator {
+
     private boolean slotFull = false;
     private int number;
 

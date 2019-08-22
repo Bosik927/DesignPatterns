@@ -1,7 +1,7 @@
-package com.github.bosik927.mediator.sample;
+package com.github.bosik927.mediator.sample.control;
 
 public class Producer implements Runnable {
-    // 2. Producers are coupled only to the Mediator
+
     private Mediator med;
     private int id;
     private static int num = 1;

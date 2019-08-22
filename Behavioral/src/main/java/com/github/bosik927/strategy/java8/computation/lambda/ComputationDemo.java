@@ -1,6 +1,6 @@
 package com.github.bosik927.strategy.java8.computation.lambda;
 
-import com.github.bosik927.strategy.java8.computation.Computation;
+import com.github.bosik927.strategy.java8.computation.nolambda.compution.boundary.Computation;
 
 import java.util.Arrays;
 import java.util.List;

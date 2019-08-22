@@ -1,6 +1,9 @@
 package com.github.bosik927.strategy.java8.computation.nolambda;
 
-import com.github.bosik927.strategy.java8.computation.Computation;
+import com.github.bosik927.strategy.java8.computation.nolambda.compution.boundary.Computation;
+import com.github.bosik927.strategy.java8.computation.nolambda.compution.control.IntDifference;
+import com.github.bosik927.strategy.java8.computation.nolambda.compution.control.IntProduct;
+import com.github.bosik927.strategy.java8.computation.nolambda.compution.control.IntSum;
 
 import java.util.Arrays;
 import java.util.List;
@@ -15,8 +18,6 @@ public class ComputationDemo {
                         new IntProduct()
                 );
 
-        for (Computation comp : computations) {
-            System.out.println(comp.compute(10, 4));
-        }
+        computations.forEach(computation -> computation.compute(10,4));
     }
 }

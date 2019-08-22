@@ -1,4 +1,6 @@
-package com.github.bosik927.memento.sample;
+package com.github.bosik927.memento.sample.control;
+
+import com.github.bosik927.memento.sample.entity.Memento;
 
 public class Originator {
 

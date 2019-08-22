@@ -1,5 +1,8 @@
 package com.github.bosik927.memento.sample;
 
+import com.github.bosik927.memento.sample.control.Caretaker;
+import com.github.bosik927.memento.sample.control.Originator;
+
 public class MementoDemo {
 
     public static void main(String[] args) {

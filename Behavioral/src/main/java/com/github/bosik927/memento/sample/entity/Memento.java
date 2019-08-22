@@ -1,4 +1,4 @@
-package com.github.bosik927.memento.sample;
+package com.github.bosik927.memento.sample.entity;
 
 public class Memento {
 

@@ -1,5 +1,8 @@
 package com.github.bosik927.memento.common;
 
+import com.github.bosik927.memento.common.control.CareTaker;
+import com.github.bosik927.memento.common.control.Originator;
+
 public class MementoPatternDemo {
 
     public static void main(String[] args) {

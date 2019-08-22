@@ -1,4 +1,4 @@
-package com.github.bosik927.memento.common;
+package com.github.bosik927.memento.common.entity;
 
 public class Memento {
 

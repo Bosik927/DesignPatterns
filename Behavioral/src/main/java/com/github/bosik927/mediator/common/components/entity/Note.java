@@ -2,11 +2,13 @@ package com.github.bosik927.mediator.common.components.entity;
 
 public class Note {
 
+    private static final String NEW_NOTE_NAME = "New note";
+
     private String name;
     private String text;
 
     public Note() {
-        name = "New note";
+        name = NEW_NOTE_NAME;
     }
 
     public void setName(String name) {

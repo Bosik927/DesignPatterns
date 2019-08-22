@@ -6,6 +6,8 @@ import com.github.bosik927.mediator.common.mediator.boundary.Mediator;
 import javax.swing.JTextArea;
 import java.awt.event.KeyEvent;
 
+import static com.github.bosik927.mediator.common.components.entity.SingleComponent.TEXT_BOX;
+
 public class TextBox extends JTextArea implements Component {
 
     private Mediator mediator;
@@ -22,6 +24,6 @@ public class TextBox extends JTextArea implements Component {
 
     @Override
     public String getName() {
-        return "TextBox";
+        return TEXT_BOX.getName();
     }
 }

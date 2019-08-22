@@ -6,6 +6,8 @@ import com.github.bosik927.mediator.common.mediator.boundary.Mediator;
 import javax.swing.JTextField;
 import java.awt.event.KeyEvent;
 
+import static com.github.bosik927.mediator.common.components.entity.SingleComponent.TITLE;
+
 public class Title extends JTextField implements Component {
 
     private Mediator mediator;
@@ -22,6 +24,6 @@ public class Title extends JTextField implements Component {
 
     @Override
     public String getName() {
-        return "Title";
+        return TITLE.getName();
     }
 }

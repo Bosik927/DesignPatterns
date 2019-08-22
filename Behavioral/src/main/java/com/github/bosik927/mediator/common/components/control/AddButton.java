@@ -7,6 +7,8 @@ import com.github.bosik927.mediator.common.mediator.boundary.Mediator;
 import javax.swing.JButton;
 import java.awt.event.ActionEvent;
 
+import static com.github.bosik927.mediator.common.components.entity.SingleComponent.ADDING_BUTTON;
+
 public class AddButton extends JButton implements Component {
 
     private Mediator mediator;
@@ -27,6 +29,6 @@ public class AddButton extends JButton implements Component {
 
     @Override
     public String getName() {
-        return "AddButton";
+        return ADDING_BUTTON.getName();
     }
 }

@@ -9,6 +9,7 @@ import com.github.bosik927.mediator.common.components.control.List;
 import com.github.bosik927.mediator.common.components.control.SaveButton;
 import com.github.bosik927.mediator.common.components.control.TextBox;
 import com.github.bosik927.mediator.common.components.control.Title;
+import com.github.bosik927.mediator.common.components.entity.SingleComponent;
 import com.github.bosik927.mediator.common.mediator.boundary.Mediator;
 
 import javax.swing.BoxLayout;
@@ -24,6 +25,8 @@ import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.awt.Font;
 
+import static com.github.bosik927.mediator.common.components.entity.ComponentConstants.*;
+
 public class Editor implements Mediator {
 
     private Title title;
@@ -34,50 +37,54 @@ public class Editor implements Mediator {
     private List list;
     private Filter filter;
 
-    private JLabel titleLabel = new JLabel("Title:");
-    private JLabel textLabel = new JLabel("Text:");
-    private JLabel label = new JLabel("Add or select existing note to proceed...");
+    private JLabel titleLabel = new JLabel(TITLE_LABEL_CONTENT);
+    private JLabel textLabel = new JLabel(TEXT_LABEL_CONTENT);
+    private JLabel label = new JLabel(ADDING_LABEL_CONTENT);
 
     @Override
     public void registerComponent(Component component) {
         component.setMediator(this);
-        switch (component.getName()) {
-            case "AddButton":
-                add = (AddButton)component;
-                break;
-            case "DelButton":
-                del = (DeleteButton)component;
-                break;
-            case "Filter":
-                filter = (Filter)component;
-                break;
-            case "List":
-                list = (List)component;
-                this.list.addListSelectionListener(listSelectionEvent -> {
-                    Note note = (Note)list.getSelectedValue();
-                    if (note != null) {
-                        getInfoFromList(note);
-                    } else {
-                        clear();
-                    }
-                });
-                break;
-            case "SaveButton":
-                save = (SaveButton)component;
-                break;
-            case "TextBox":
-                textBox = (TextBox)component;
-                break;
-            case "Title":
-                title = (Title)component;
-                break;
-        }
+
+        SingleComponent.byName(component.getName()).ifPresent(singleComponent -> {
+            switch (singleComponent) {
+                case ADDING_BUTTON:
+                    add = (AddButton) component;
+                    break;
+                case DELETE_BUTTON:
+                    del = (DeleteButton) component;
+                    break;
+                case FILTER:
+                    filter = (Filter) component;
+                    break;
+                case LIST:
+                    list = (List) component;
+                    this.list.addListSelectionListener(listSelectionEvent -> {
+                        Note note = (Note) list.getSelectedValue();
+                        if (note != null) {
+                            getInfoFromList(note);
+                        } else {
+                            clear();
+                        }
+                    });
+                    break;
+                case SAVE_BUTTON:
+                    save = (SaveButton) component;
+                    break;
+                case TEXT_BOX:
+                    textBox = (TextBox) component;
+                    break;
+                case TITLE:
+                    title = (Title) component;
+                    break;
+            }
+        });
+
     }
 
     @Override
     public void addNewNote(Note note) {
-        title.setText("");
-        textBox.setText("");
+        title.setText(EMPTY);
+        textBox.setText(EMPTY);
         list.addElement(note);
     }
 
@@ -88,7 +95,7 @@ public class Editor implements Mediator {
 
     @Override
     public void getInfoFromList(Note note) {
-        title.setText(note.getName().replace('*', ' '));
+        title.setText(note.getName().replace(ASTERISK_SIGN, SPACE_SIGN));
         textBox.setText(note.getText());
     }
 
@@ -99,7 +106,8 @@ public class Editor implements Mediator {
             note.setName(title.getText());
             note.setText(textBox.getText());
             list.repaint();
-        } catch (NullPointerException ignored) {}
+        } catch (NullPointerException ignored) {
+        }
     }
 
     @Override
@@ -107,17 +115,18 @@ public class Editor implements Mediator {
         try {
             Note note = list.getCurrentElement();
             String name = note.getName();
-            if (!name.endsWith("*")) {
-                note.setName(note.getName() + "*");
+            if (!name.endsWith(ASTERISK_SIGN)) {
+                note.setName(note.getName() + ASTERISK_SIGN);
             }
             list.repaint();
-        } catch (NullPointerException ignored) {}
+        } catch (NullPointerException ignored) {
+        }
     }
 
     @Override
     public void clear() {
-        title.setText("");
-        textBox.setText("");
+        title.setText(EMPTY);
+        textBox.setText(EMPTY);
     }
 
     @Override
@@ -144,7 +153,7 @@ public class Editor implements Mediator {
 
     @Override
     public void createGUI() {
-        JFrame notes = new JFrame("Notes");
+        JFrame notes = new JFrame(NOTES);
         notes.setSize(960, 600);
         notes.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         JPanel left = new JPanel();
@@ -152,7 +161,7 @@ public class Editor implements Mediator {
         left.setSize(320, 600);
         left.setLayout(new BoxLayout(left, BoxLayout.Y_AXIS));
         JPanel filterPanel = new JPanel();
-        filterPanel.add(new JLabel("Filter:"));
+        filterPanel.add(new JLabel(FILTER));
         filter.setColumns(20);
         filterPanel.add(filter);
         filterPanel.setPreferredSize(new Dimension(280, 40));
@@ -182,7 +191,7 @@ public class Editor implements Mediator {
         textBox.setBorder(new LineBorder(Color.DARK_GRAY));
         textBox.setBounds(20, 80, 595, 410);
         save.setBounds(270, 535, 80, 25);
-        label.setFont(new Font("Verdana", Font.PLAIN, 22));
+        label.setFont(new Font(GUI_FONT_FAMILY, Font.PLAIN, 22));
         label.setBounds(100, 240, 500, 100);
         right.add(label);
         right.add(titleLabel);

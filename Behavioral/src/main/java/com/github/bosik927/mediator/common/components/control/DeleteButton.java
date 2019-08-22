@@ -6,6 +6,8 @@ import com.github.bosik927.mediator.common.mediator.boundary.Mediator;
 import javax.swing.JButton;
 import java.awt.event.ActionEvent;
 
+import static com.github.bosik927.mediator.common.components.entity.SingleComponent.DELETE_BUTTON;
+
 public class DeleteButton extends JButton implements Component {
 
     private Mediator mediator;
@@ -26,6 +28,6 @@ public class DeleteButton extends JButton implements Component {
 
     @Override
     public String getName() {
-        return "DelButton";
+        return DELETE_BUTTON.getName();
     }
 }

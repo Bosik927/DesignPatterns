@@ -7,6 +7,8 @@ import com.github.bosik927.mediator.common.mediator.boundary.Mediator;
 import javax.swing.DefaultListModel;
 import javax.swing.JList;
 
+import static com.github.bosik927.mediator.common.components.entity.SingleComponent.LIST;
+
 @SuppressWarnings("unchecked")
 public class List extends JList implements Component {
 
@@ -49,7 +51,7 @@ public class List extends JList implements Component {
 
     @Override
     public String getName() {
-        return "List";
+        return LIST.getName();
     }
 
     private class Hide implements Runnable {

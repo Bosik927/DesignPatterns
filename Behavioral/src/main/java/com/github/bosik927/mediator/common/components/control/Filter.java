@@ -11,6 +11,8 @@ import java.awt.event.KeyEvent;
 import java.util.ArrayList;
 import java.util.List;
 
+import static com.github.bosik927.mediator.common.components.entity.SingleComponent.FILTER;
+
 public class Filter extends JTextField implements Component {
 
     private Mediator mediator;
@@ -58,6 +60,6 @@ public class Filter extends JTextField implements Component {
 
     @Override
     public String getName() {
-        return "Filter";
+        return FILTER.getName();
     }
 }

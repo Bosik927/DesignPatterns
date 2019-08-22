@@ -1,4 +1,6 @@
-package com.github.bosik927.nullobject.advance.shapes;
+package com.github.bosik927.nullobject.advance.shapes.control;
+
+import com.github.bosik927.nullobject.advance.shapes.boundary.Shape;
 
 public class Triangle implements Shape {
 

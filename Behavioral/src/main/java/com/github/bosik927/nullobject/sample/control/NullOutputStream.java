@@ -1,8 +1,8 @@
-package com.github.bosik927.nullobject.sample;
+package com.github.bosik927.nullobject.sample.control;
 
 import java.io.OutputStream;
 
-class NullOutputStream extends OutputStream {
+public class NullOutputStream extends OutputStream {
 
     public NullOutputStream() {
     }

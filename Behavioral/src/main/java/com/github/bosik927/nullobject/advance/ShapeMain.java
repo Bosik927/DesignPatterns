@@ -1,9 +1,8 @@
 package com.github.bosik927.nullobject.advance;
 
-import com.github.bosik927.nullobject.advance.shapes.Shape;
-import com.github.bosik927.nullobject.advance.shapes.ShapeFactory;
+import com.github.bosik927.nullobject.advance.shapes.boundary.Shape;
+import com.github.bosik927.nullobject.advance.shapes.control.ShapeFactory;
 
-/*BETTER USE THE OPTIONAL OBJECT*/
 public class ShapeMain {
 
     public static void main(String... args) {

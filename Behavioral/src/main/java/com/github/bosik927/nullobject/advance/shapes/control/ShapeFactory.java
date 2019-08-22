@@ -1,4 +1,10 @@
-package com.github.bosik927.nullobject.advance.shapes;
+package com.github.bosik927.nullobject.advance.shapes.control;
+
+import com.github.bosik927.nullobject.advance.shapes.boundary.Shape;
+
+import static com.github.bosik927.nullobject.advance.shapes.entity.SimpleShape.CIRCLE;
+import static com.github.bosik927.nullobject.advance.shapes.entity.SimpleShape.RECTANGLE;
+import static com.github.bosik927.nullobject.advance.shapes.entity.SimpleShape.TRANGLE;
 
 public class ShapeFactory {
 
@@ -16,11 +22,11 @@ public class ShapeFactory {
     }
 
     public Shape createShape(String shapeType) {
-        if ("Circle".equalsIgnoreCase(shapeType)) {
+        if (CIRCLE.getName().equalsIgnoreCase(shapeType)) {
             return new Circle();
-        } else if ("Rectangle".equalsIgnoreCase(shapeType)) {
+        } else if (RECTANGLE.getName().equalsIgnoreCase(shapeType)) {
             return new Rectangle();
-        } else if ("Triangle".equalsIgnoreCase(shapeType)) {
+        } else if (TRANGLE.getName().equalsIgnoreCase(shapeType)) {
             return new Triangle();
         }
         return new NullShape();

@@ -1,5 +1,8 @@
 package com.github.bosik927.nullobject.sample;
 
+import com.github.bosik927.nullobject.sample.control.Application;
+import com.github.bosik927.nullobject.sample.control.NullPrintStream;
+
 import java.io.FileNotFoundException;
 import java.io.PrintStream;
 

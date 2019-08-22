@@ -1,4 +1,7 @@
-package com.github.bosik927.nullobject.common;
+package com.github.bosik927.nullobject.common.control;
+
+import com.github.bosik927.nullobject.common.boundary.List;
+import com.github.bosik927.nullobject.common.boundary.ListVisitor;
 
 public class NullList extends List {
 

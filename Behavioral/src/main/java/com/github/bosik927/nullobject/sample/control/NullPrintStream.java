@@ -1,8 +1,8 @@
-package com.github.bosik927.nullobject.sample;
+package com.github.bosik927.nullobject.sample.control;
 
 import java.io.PrintStream;
 
-class NullPrintStream extends PrintStream {
+public class NullPrintStream extends PrintStream {
 
     public NullPrintStream() {
         super(new NullOutputStream());

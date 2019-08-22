@@ -1,16 +1,18 @@
-package com.github.bosik927.nullobject.common;
+package com.github.bosik927.nullobject.common.control;
+
+import com.github.bosik927.nullobject.common.boundary.List;
+import com.github.bosik927.nullobject.common.boundary.ListVisitor;
 
 public class NonNullList extends List {
 
     private Object head;
     private List tail;
 
-    // Creates a list from a head and tail. Acts as "cons"
     public NonNullList(Object head, List tail) {
         this.head = head;
         this.tail = tail;
     }
-    // for convenience we could add a constructor taking only the head to make 1 element lists.
+
     public Object getHead() {
         return head;
     }

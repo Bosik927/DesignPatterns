@@ -1,6 +1,6 @@
-package com.github.bosik927.templateclass.sample;
+package com.github.bosik927.templateclass.sample.boundary;
 
-abstract class Specialization extends Generalization {
+public abstract class Specialization extends Generalization {
 
     protected void stepThr() {
         step3_1();

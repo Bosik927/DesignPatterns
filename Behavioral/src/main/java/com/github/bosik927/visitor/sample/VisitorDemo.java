@@ -1,10 +1,10 @@
 package com.github.bosik927.visitor.sample;
 
-import com.github.bosik927.visitor.sample.elements.Document;
-import com.github.bosik927.visitor.sample.elements.JsonElement;
-import com.github.bosik927.visitor.sample.elements.XmlElement;
-import com.github.bosik927.visitor.sample.visitor.ElementVisitor;
-import com.github.bosik927.visitor.sample.visitor.Visitor;
+import com.github.bosik927.visitor.sample.elements.control.Document;
+import com.github.bosik927.visitor.sample.elements.control.JsonElement;
+import com.github.bosik927.visitor.sample.elements.control.XmlElement;
+import com.github.bosik927.visitor.sample.visitor.entity.ElementVisitor;
+import com.github.bosik927.visitor.sample.visitor.boundary.Visitor;
 
 import java.util.UUID;
 

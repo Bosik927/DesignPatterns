@@ -1,4 +1,6 @@
-package com.github.bosik927.templateclass.java8;
+package com.github.bosik927.templateclass.java8.control;
+
+import com.github.bosik927.templateclass.java8.boundary.ComputerBuilder;
 
 public class HighEndComputerBuilder extends ComputerBuilder {
 

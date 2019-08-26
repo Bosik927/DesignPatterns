@@ -1,8 +1,8 @@
-package com.github.bosik927.templateclass.sample;
+package com.github.bosik927.templateclass.sample.boundary;
 
-abstract class Generalization {
+public abstract class Generalization {
 
-    void findSolution() {
+    public void findSolution() {
         stepOne();
         stepTwo();
         stepThr();
@@ -13,10 +13,10 @@ abstract class Generalization {
         System.out.println("Generalization.stepOne");
     }
 
-    abstract void stepTwo();
+    public abstract void stepTwo();
     abstract void stepThr();
 
-    void stepFor() {
+    public void stepFor() {
         System.out.println( "Generalization.stepFor" );
     }
 }

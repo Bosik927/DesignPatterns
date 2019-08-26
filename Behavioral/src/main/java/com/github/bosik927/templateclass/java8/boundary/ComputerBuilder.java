@@ -1,4 +1,6 @@
-package com.github.bosik927.templateclass.java8;
+package com.github.bosik927.templateclass.java8.boundary;
+
+import com.github.bosik927.templateclass.java8.entity.Computer;
 
 import java.util.ArrayList;
 import java.util.HashMap;

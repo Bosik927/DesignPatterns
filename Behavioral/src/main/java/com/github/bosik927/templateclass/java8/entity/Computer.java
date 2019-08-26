@@ -1,4 +1,4 @@
-package com.github.bosik927.templateclass.java8;
+package com.github.bosik927.templateclass.java8.entity;
 
 import java.util.Map;
 

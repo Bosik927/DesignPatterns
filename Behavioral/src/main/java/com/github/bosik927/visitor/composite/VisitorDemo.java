@@ -1,7 +1,7 @@
 package com.github.bosik927.visitor.composite;
 
-import com.github.bosik927.visitor.composite.components.Composite;
-import com.github.bosik927.visitor.composite.components.Leaf;
+import com.github.bosik927.visitor.composite.components.control.Composite;
+import com.github.bosik927.visitor.composite.components.control.Leaf;
 
 public class VisitorDemo {
 

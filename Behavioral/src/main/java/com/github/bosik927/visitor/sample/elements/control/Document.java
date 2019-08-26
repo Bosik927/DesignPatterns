@@ -1,6 +1,7 @@
-package com.github.bosik927.visitor.sample.elements;
+package com.github.bosik927.visitor.sample.elements.control;
 
-import com.github.bosik927.visitor.sample.visitor.Visitor;
+import com.github.bosik927.visitor.sample.elements.boundary.Element;
+import com.github.bosik927.visitor.sample.visitor.boundary.Visitor;
 
 import java.util.ArrayList;
 import java.util.List;

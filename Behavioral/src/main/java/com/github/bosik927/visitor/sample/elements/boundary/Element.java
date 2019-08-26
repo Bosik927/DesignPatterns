@@ -1,6 +1,6 @@
-package com.github.bosik927.visitor.sample.elements;
+package com.github.bosik927.visitor.sample.elements.boundary;
 
-import com.github.bosik927.visitor.sample.visitor.Visitor;
+import com.github.bosik927.visitor.sample.visitor.boundary.Visitor;
 
 public abstract class Element {
 

@@ -1,5 +1,10 @@
 package com.github.bosik927.templateclass.java8;
 
+import com.github.bosik927.templateclass.java8.boundary.ComputerBuilder;
+import com.github.bosik927.templateclass.java8.control.HighEndComputerBuilder;
+import com.github.bosik927.templateclass.java8.control.StandardComputerBuilder;
+import com.github.bosik927.templateclass.java8.entity.Computer;
+
 public class TemplateDemo {
 
     public static void main(String... args){

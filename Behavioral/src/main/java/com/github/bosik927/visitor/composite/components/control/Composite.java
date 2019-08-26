@@ -1,4 +1,6 @@
-package com.github.bosik927.visitor.composite.components;
+package com.github.bosik927.visitor.composite.components.control;
+
+import com.github.bosik927.visitor.composite.components.boundary.Component;
 
 import java.util.ArrayList;
 import java.util.List;
